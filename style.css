@@ -175,11 +175,16 @@ button {
   border-radius: 1rem;
   margin-bottom: 1rem;
   background-color: #210124;
-  color: #ffffff;
+  border: 1px solid #fff;
 }
 
 button:hover {
   background-color: #750d37;
+  color: #fff;
+}
+
+button a:hover {
+  color: #fff;
 }
 
 .button-secton {
