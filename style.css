@@ -176,6 +176,7 @@ button {
   margin-bottom: 1rem;
   background-color: #210124;
   border: 1px solid #fff;
+  color: #fff;
 }
 
 button:hover {
@@ -189,6 +190,7 @@ button a:hover {
 
 .button-secton {
   display: flex;
+  flex-wrap: wrap;
   grid-gap: 0.5rem;
   justify-content: center;
 }
@@ -364,9 +366,6 @@ textarea,
   .right-section .about-section {
     padding-left: 0%;
   }
-  .button-secton {
-    flex-wrap: wrap;
-  }
   .my-fonts {
     height: fit-content !important;
     /* height: auto; */
@@ -395,6 +394,7 @@ textarea,
     text-align: center;
     font-size: 0.8rem;
     text-transform: uppercase;
+    z-index: 1;
   }
 
   .nav-menu-mobile a {
