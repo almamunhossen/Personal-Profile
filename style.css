@@ -168,9 +168,7 @@ a:hover {
 .section-top-tex h1 {
   font-size: 2.3rem;
 }
-/* .section-top-tex {
-  margin: 2rem;
-} */
+
 button {
   padding: 0.8rem 1.5rem 0.8rem 1.5rem;
   border: none;
@@ -212,7 +210,7 @@ progress::-webkit-progress-value {
   border-radius: 5px;
 }
 progress::-webkit-progress-bar {
-  background-color: #f5d1f2;
+  background-color: #b7b5b8;
   height: 100%;
   width: 100%;
   box-sizing: border-box;
@@ -238,7 +236,7 @@ progress::-webkit-progress-bar {
 .service .fas {
   font-size: 1.5rem;
   background-color: #750d37;
-  border-radius: 50px;
+  border-radius: 50%;
   padding: 1rem;
   margin: 1rem;
 }
@@ -249,13 +247,19 @@ progress::-webkit-progress-bar {
 }
 
 /* contact section start */
+.my-contact-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* grid-template-rows: repeat(2, 1fr); */
+  grid-gap: 1rem;
+}
 
 #my-contact {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
 }
-.my-service .contact {
+#my-contact .contact {
   display: block;
   align-items: center;
   line-height: 2rem;
@@ -269,7 +273,7 @@ progress::-webkit-progress-bar {
 }
 .contact-from {
   margin: 1rem;
-  height: 75%;
+  /* height: 100vh; */
 }
 .contact [type="text"],
 textarea,
@@ -285,10 +289,13 @@ textarea,
   background-color: #210124;
   color: #f75eee;
   padding: 0.5rem;
-  border-radius: 50px;
+  border-radius: 50%;
   font-family: 1rem;
 }
-
+.worsk-head-tex {
+  font-size: 2.3rem;
+  text-align: center;
+}
 .contact a {
   color: #750d37;
   font-weight: 600;
@@ -297,4 +304,105 @@ textarea,
 .contact a:hover {
   color: #f75eee;
   font-weight: 600;
+}
+
+.nav-menu-mobile {
+  display: none;
+}
+
+/* for mobile Phoen */
+
+@media only screen and (max-width: 600px) {
+  .left-sectin {
+    display: none;
+  }
+  .about-section {
+    height: auto;
+  }
+  .about-right {
+    margin-top: 2rem;
+  }
+  .my-about img {
+    width: 100%;
+  }
+  .section-top {
+    top: 36%;
+    left: 10%;
+  }
+  .my-about {
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0px 35px;
+  }
+  #my-works {
+    margin-top: 23rem;
+    margin-left: 10px;
+  }
+  .worsk-head-tex {
+    margin-top: 75rem;
+  }
+
+  #service {
+    margin-top: 79rem;
+    margin-left: 0.5rem;
+  }
+
+  .about-skel {
+    margin: 2rem 2rem;
+    width: 95%;
+  }
+
+  progress[value] {
+    width: 75%;
+  }
+
+  .right-section .about-section {
+    padding-left: 0%;
+  }
+  .button-secton {
+    flex-wrap: wrap;
+  }
+  .my-fonts {
+    height: fit-content !important;
+    /* height: auto; */
+  }
+
+  .contact-text-head {
+    margin-top: 71rem;
+  }
+  .contact {
+    margin: 0 auto;
+  }
+
+  #contact {
+    height: auto;
+    margin-top: -19rem;
+  }
+
+  .nav-menu-mobile {
+    width: 100%;
+    height: 1rem;
+    background-color: #750d37;
+    position: fixed;
+    display: block;
+    padding: 1rem 0.5rem 2rem 0.5rem;
+    /* padding: 0.8rem; */
+    text-align: center;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+
+  .nav-menu-mobile a {
+    color: #fff;
+    padding: 1rem 0.5rem 1.05rem 0.5rem;
+  }
+
+  .nav-menu-mobile a.active {
+    background-color: #210124;
+  }
+
+  .nav-menu-mobile a:hover {
+    background-color: #210124;
+    border-radius: 3%;
+  }
 }
