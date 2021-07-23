@@ -298,6 +298,7 @@ textarea,
   padding: 0.5rem;
   border-radius: 50%;
   font-family: 1rem;
+  margin: 0.2rem;
 }
 .worsk-head-tex {
   font-size: 2.3rem;
@@ -381,6 +382,9 @@ textarea,
   #contact {
     height: auto;
     margin-top: -19rem;
+  }
+  .contact-from button {
+    width: 100%;
   }
 
   .nav-menu-mobile {
